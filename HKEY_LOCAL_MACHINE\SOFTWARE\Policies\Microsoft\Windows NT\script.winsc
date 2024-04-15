@@ -1,0 +1,20 @@
+--windows script
+local RealTimeProtection_ON
+local RealTimeProtection_OFF
+RealTimeProtection_ON = "rltp.wdef"
+RealTimeProtectioin_OFF = "/rltp.wdef"
+fileType = {"Lua","JavaScript"}
+local WinDef = "rltpr.wdef"
+if WinDef == RealTimeProtection_ON then print("R.T.P is on.. Would you like to disable it??")
+if WinDef == RealTimeProtection_OFF then print("its off.. , turn it on to make this work")
+end
+end
+local DialogHost = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Dialog.windows"
+Dialog:create
+Dialog:title(title)
+Dialog:desc(dsc)
+local btn1="OK"
+local btn2="Nah.. I dont feelsafe.."
+Dialog:btn1(btn1);Dialog:btn2(btn2)
+local title="Prax but bypassed"
+local desc="We would like to disable this feature\n R.T.P"
